@@ -1,0 +1,1237 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+:root {
+  --main-color:#2f2721;
+  --primary-color:#d3ad7f;
+  --second-color:rgba(104, 105, 105, 0.986);
+  --black:#13131a;
+  --white:#fff6eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--main-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+.shipping {
+  height: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: #14110e;
+  color: var(--white);
+}
+
+header {
+  height: 120px;
+  width: 100%;
+  background-color: var(--main-color);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  align-items: center;
+}
+@media (max-width: 1199px) {
+  header {
+    height: auto;
+    width: auto;
+  }
+}
+@media (max-width: 550px) {
+  header {
+    height: auto;
+    width: auto;
+  }
+}
+
+.logo {
+  font-family: "Josefin Sans";
+  font-size: 30px;
+  padding: 15px;
+  text-transform: uppercase;
+}
+.logo a {
+  color: var(--white);
+  text-decoration: unset;
+}
+@media (max-width: 1199px) {
+  .logo a {
+    font-size: 37px;
+  }
+}
+@media (max-width: 550px) {
+  .logo a {
+    font-size: 22px;
+  }
+}
+.logo span {
+  padding: 3px;
+  color: var(--second-color);
+}
+
+.nav-link {
+  font-family: "Josefin Sans";
+  font-size: 17px;
+  padding: 7px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+@media (max-width: 1199px) {
+  .nav-link {
+    font-size: 17px;
+  }
+}
+@media (max-width: 550px) {
+  .nav-link {
+    font-size: 12px;
+  }
+}
+.nav-link:hover {
+  color: var(--black);
+  text-shadow: 1px 1px 4px var(--white);
+}
+
+.navbar-toggler {
+  background-color: var(--primary-color);
+  color: rgba(211, 173, 127, 0);
+  box-shadow: 2px 2px 5px white;
+}
+
+/*----------------INDEX------------------*/
+.home {
+  height: 600px;
+  width: auto;
+  background-image: url(./image/container.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: "Josefin Sans";
+}
+.home h1 {
+  font-size: 55px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: bolder;
+  margin-left: 100px;
+  padding-top: 150px;
+}
+@media (max-width: 1199px) {
+  .home h1 {
+    font-size: 37px;
+  }
+}
+@media (max-width: 550px) {
+  .home h1 {
+    font-size: 27px;
+  }
+}
+.home a {
+  font-size: 30px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 0%;
+  margin-left: 100px;
+  align-content: center;
+  box-shadow: 2px 2px 5px white;
+}
+@media (max-width: 1199px) {
+  .home a {
+    font-size: 37px;
+  }
+}
+@media (max-width: 550px) {
+  .home a {
+    font-size: 27px;
+  }
+}
+.home a:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+  box-shadow: 2px 2px 5px var(--primary-color);
+}
+
+.make {
+  background-image: url(./image/make.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+  font-family: "Josefin Sans";
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 200px 200px 80px;
+}
+.make h2 {
+  text-align: center;
+  color: var(--white);
+  font-size: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-top: 50px;
+  margin: 0px 30px 0px 30px;
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+@media (max-width: 1199px) {
+  .make h2 {
+    font-size: 37px;
+  }
+}
+@media (max-width: 550px) {
+  .make h2 {
+    font-size: 27px;
+    text-shadow: 2px 2px 2px black;
+  }
+}
+.make p {
+  text-align: center;
+  color: var(--white);
+  font-size: 17px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding-top: 50px;
+  margin: 0px 90px 0px 90px;
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+@media (max-width: 1199px) {
+  .make p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 550px) {
+  .make p {
+    font-size: 17px;
+    padding-top: 20px;
+    text-shadow: 2px 2px 2px black;
+    margin: 0px 10px 0px 10px;
+  }
+}
+.make a {
+  width: 200px;
+  font-size: 30px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 80%;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 2px 2px 2px black;
+  grid-column: 3/4;
+  grid-row: 3;
+}
+@media (max-width: 1199px) {
+  .make a {
+    font-size: 37px;
+  }
+}
+@media (max-width: 550px) {
+  .make a {
+    font-size: 17px;
+    height: 45px;
+    padding: 10px;
+    width: 100px;
+    margin-top: 20px;
+  }
+}
+.make a:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.find {
+  background-image: url(./image/find.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+  font-family: "Josefin Sans";
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 200px 200px 80px;
+}
+.find h2 {
+  text-align: center;
+  color: var(--white);
+  font-size: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-top: 120px;
+  margin: 0px 30px 0px 30px;
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+@media (max-width: 1199px) {
+  .find h2 {
+    font-size: 37px;
+  }
+}
+@media (max-width: 550px) {
+  .find h2 {
+    font-size: 27px;
+    text-shadow: 2px 2px 2px black;
+  }
+}
+.find p {
+  text-align: center;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 50px;
+  margin: 0px 90px 0px 90px;
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+@media (max-width: 1199px) {
+  .find p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 550px) {
+  .find p {
+    font-size: 17px;
+    padding-top: 70px;
+    text-shadow: 2px 2px 2px black;
+    margin: 0px 10px 0px 10px;
+  }
+}
+.find a {
+  width: 200px;
+  font-size: 30px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 80%;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 2px 2px 2px black;
+  grid-column: 3/4;
+  grid-row: 3;
+}
+@media (max-width: 1199px) {
+  .find a {
+    font-size: 27px;
+  }
+}
+@media (max-width: 550px) {
+  .find a {
+    font-size: 17px;
+    height: 75px;
+    padding: 10px;
+    width: 100px;
+    margin-top: 20px;
+  }
+}
+.find a:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.carro {
+  background-color: var(--white);
+  height: 450px;
+  text-align: center;
+  padding-top: 120px;
+  font-family: "Josefin Sans";
+}
+.carro h3 {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+@media (max-width: 1199px) {
+  .carro h3 {
+    font-size: 37px;
+  }
+}
+@media (max-width: 550px) {
+  .carro h3 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 550px) {
+  .carro p {
+    font-size: 14px;
+  }
+}
+.carro a {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+.carro a:hover {
+  background-color: var(--primary-color);
+}
+
+.row {
+  margin: 0%;
+}
+
+.tips {
+  height: auto;
+  padding-bottom: 70px;
+  font-family: "Josefin Sans";
+  text-align: center;
+}
+.tips h2 {
+  padding-top: 70px;
+  color: var(--main-color);
+  font-size: 45px;
+}
+@media (max-width: 1199px) {
+  .tips h2 {
+    font-size: 37px;
+  }
+}
+@media (max-width: 550px) {
+  .tips h2 {
+    font-size: 27px;
+  }
+}
+
+.card {
+  height: 350px;
+  margin-top: 50px;
+  width: 300px;
+  align-content: center;
+}
+.card img {
+  height: 192px;
+}
+@media (max-width: 1199px) {
+  .card {
+    font-size: 15px;
+    width: 200px;
+    margin-left: 20px;
+    padding: 0%;
+  }
+  .card .card-body {
+    padding: 5px;
+  }
+  .card img {
+    height: 130px;
+  }
+}
+@media (max-width: 550px) {
+  .card {
+    font-size: 14px;
+    margin: 20px;
+    width: auto;
+    height: auto;
+  }
+  .card img {
+    height: 192px;
+  }
+}
+.card a {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+.card a:hover {
+  background-color: var(--primary-color);
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--main-color);
+  height: 400px;
+  font-family: "Josefin Sans";
+  color: var(--white);
+  font-size: 22px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  grid-template-rows: 200px 130px;
+  gap: 2px;
+  padding: 60px;
+}
+@media (max-width: 1199px) {
+  footer {
+    font-size: 17px;
+    padding: 30px;
+  }
+}
+@media (max-width: 550px) {
+  footer {
+    font-size: 14px;
+    gap: 5%;
+    padding: 7px;
+  }
+}
+
+.address {
+  width: 150px;
+}
+.address p {
+  font-size: 17px;
+  font-weight: lighter;
+}
+@media (max-width: 1199px) {
+  .address p {
+    font-size: 17px;
+    width: 100px;
+  }
+}
+@media (max-width: 550px) {
+  .address p {
+    font-size: 14px;
+    width: 100px;
+  }
+}
+
+.email p {
+  font-size: 17px;
+  font-weight: lighter;
+}
+@media (max-width: 1199px) {
+  .email p {
+    font-size: 17px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .email p {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+}
+.email p:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.call p {
+  font-size: 17px;
+  font-weight: lighter;
+}
+@media (max-width: 1199px) {
+  .call p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 550px) {
+  .call p {
+    font-size: 14px;
+    width: 100px;
+  }
+}
+
+.hours p {
+  font-size: 17px;
+  font-weight: lighter;
+}
+@media (max-width: 1199px) {
+  .hours p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 550px) {
+  .hours p {
+    font-size: 14px;
+    width: auto;
+  }
+}
+
+.creat {
+  grid-column: 1/5;
+  grid-row: 2;
+  text-align: center;
+  border-top: 2px solid var(--primary-color);
+  padding-top: 10px;
+}
+.creat span {
+  color: var(--primary-color);
+}
+
+/*---------------ABOUT-----------------*/
+.item {
+  background-image: url(./image/item.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+}
+@media (max-width: 550px) {
+  .item {
+    width: auto;
+  }
+}
+
+.about h1 {
+  font-family: "Josefin Sans";
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 60px;
+  padding-top: 27px;
+}
+@media (max-width: 1199px) {
+  .about h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .about h1 {
+    font-size: 37px;
+  }
+}
+
+.about2 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px 150px;
+  gap: 17px;
+  font-family: "Josefin Sans";
+}
+@media (max-width: 1199px) {
+  .about2 {
+    width: auto;
+    height: auto;
+    grid-template-rows: 200px;
+  }
+}
+@media (max-width: 550px) {
+  .about2 {
+    width: auto;
+    height: auto;
+    grid-template-rows: 90px;
+  }
+}
+.about2 h3 {
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 30px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 45px;
+  width: 450px;
+}
+@media (max-width: 1199px) {
+  .about2 h3 {
+    font-size: 30px;
+    width: auto;
+  }
+}
+@media (max-width: 550px) {
+  .about2 h3 {
+    font-size: 20px;
+    width: auto;
+    margin: 10px;
+  }
+}
+.about2 p {
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: 17px;
+  width: 470px;
+}
+@media (max-width: 1199px) {
+  .about2 p {
+    font-size: 17px;
+    width: auto;
+    padding: 7px;
+  }
+}
+@media (max-width: 550px) {
+  .about2 p {
+    font-size: 17px;
+  }
+}
+
+.item2 {
+  background-image: url(./image/about.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 450px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  margin: 7px 0px 0px 150px;
+}
+@media (max-width: 1199px) {
+  .item2 {
+    width: auto;
+    height: auto;
+    margin: 10%;
+  }
+}
+@media (max-width: 550px) {
+  .item2 {
+    width: auto;
+    background-position: center;
+    margin: 5%;
+  }
+}
+
+.container2 {
+  height: 1450px;
+  font-family: "Josefin Sans";
+  background-image: url(./image/container2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .container2 {
+    width: auto;
+    height: auto;
+  }
+}
+.container2 h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 50px;
+  padding-top: 90px;
+}
+@media (max-width: 1199px) {
+  .container2 h2 {
+    font-size: 37px;
+  }
+}
+@media (max-width: 550px) {
+  .container2 h2 {
+    font-size: 37px;
+    margin: 10%;
+  }
+}
+.container2 p {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 40px;
+  width: 750px;
+  margin: 0px 0px 0px 270px;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .container2 p {
+    font-size: 25px;
+    width: auto;
+    margin: 0 auto;
+    padding: 10%;
+  }
+}
+@media (max-width: 550px) {
+  .container2 p {
+    font-size: 20px;
+  }
+}
+.container2 .note {
+  padding: 130px 0px 50px 0px;
+}
+@media (max-width: 1199px) {
+  .container2 .note {
+    font-size: 35px;
+    margin: 5%;
+    width: auto;
+  }
+}
+@media (max-width: 550px) {
+  .container2 .note {
+    font-size: 20px;
+  }
+}
+.container2 .item3 {
+  background-color: var(--primary-color);
+  padding: 10px;
+  width: 105px;
+  text-transform: uppercase;
+  color: var(--white);
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 2px 2px 5px black;
+}
+@media (max-width: 1199px) {
+  .container2 .item3 {
+    font-size: 17px;
+    width: 115px;
+  }
+}
+@media (max-width: 550px) {
+  .container2 .item3 {
+    font-size: 14px;
+  }
+}
+.container2 .item3:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: var(--white);
+  box-shadow: 2px 2px 5px var(--white);
+}
+
+.card2 {
+  height: auto;
+  margin-top: 50px;
+  align-content: center;
+  background-color: var(--white);
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .card2 {
+    width: auto;
+    margin: 2% auto;
+    height: auto;
+  }
+}
+@media (max-width: 550px) {
+  .card2 {
+    margin: 20px;
+    width: auto;
+    height: auto;
+  }
+}
+.card2 h4 {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+@media (max-width: 1199px) {
+  .card2 h4 {
+    font-size: 21px;
+    width: auto;
+  }
+}
+.card2 p {
+  margin-left: 0%;
+  font-size: 17px;
+  padding: 20px;
+  width: 290px;
+}
+@media (max-width: 1199px) {
+  .card2 p {
+    font-size: 17px;
+    width: auto;
+  }
+}
+@media (max-width: 550px) {
+  .card2 p {
+    font-size: 22px;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+.card2 .img1 {
+  height: 192px;
+  background-image: url(./image/card4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1199px) {
+  .card2 .img1 {
+    height: 192px;
+  }
+}
+@media (max-width: 550px) {
+  .card2 .img1 {
+    height: 192px;
+  }
+}
+.card2 .img2 {
+  height: 192px;
+  background-image: url(./image/card5.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1199px) {
+  .card2 .img2 {
+    height: 192px;
+  }
+}
+@media (max-width: 550px) {
+  .card2 .img2 {
+    height: 192px;
+  }
+}
+.card2 .img3 {
+  height: 192px;
+  background-image: url(./image/card6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1199px) {
+  .card2 .img3 {
+    height: 192px;
+  }
+}
+@media (max-width: 550px) {
+  .card2 .img3 {
+    height: 192px;
+  }
+}
+.card2 a {
+  background-color: var(--black);
+  box-shadow: 2px 2px 5px white;
+  color: var(--primary-color);
+}
+@media (max-width: 1199px) {
+  .card2 a {
+    font-size: 19px;
+  }
+}
+@media (max-width: 550px) {
+  .card2 a {
+    font-size: 20px;
+  }
+}
+.card2 a:hover {
+  background-color: var(--primary-color);
+  box-shadow: 2px 2px 5px black;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/*-------------MENU----------------*/
+.menu {
+  height: auto;
+  background: linear-gradient(5grad, rgb(172, 118, 18), #d3ad7f);
+}
+@media (max-width: 1199px) {
+  .menu {
+    height: auto;
+  }
+}
+@media (max-width: 550px) {
+  .menu {
+    height: auto;
+  }
+}
+
+.item4 {
+  background-image: url(./image/item4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+  width: auto;
+}
+@media (max-width: 1199px) {
+  .item4 {
+    width: auto;
+    height: auto;
+  }
+}
+.item4 p {
+  font-family: "Josefin Sans";
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: bold;
+  text-align: center;
+  width: 800px;
+  padding: 100px;
+  margin: 0px 0px 0px 300px;
+}
+@media (max-width: 1199px) {
+  .item4 p {
+    font-size: 32px;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 550px) {
+  .item4 p {
+    font-size: 20px;
+  }
+}
+
+.dropdown {
+  margin: 20px 0px 0px 50px;
+  font-family: "Josefin Sans";
+}
+.dropdown button {
+  background-color: var(--white);
+  border-radius: 25%;
+  width: 100px;
+  text-align: center;
+  font-size: 23px;
+  box-shadow: 2px 2px 5px var(--black);
+}
+@media (max-width: 1199px) {
+  .dropdown button {
+    font-size: 30px;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 550px) {
+  .dropdown button {
+    font-size: 17px;
+  }
+}
+.dropdown button:hover {
+  background-color: var(--main-color);
+  color: var(--white);
+  box-shadow: 2px 2px 5px var(--black);
+}
+
+.card3 {
+  height: auto;
+  width: 490px;
+  margin: 50px 0px 50px 70px;
+  background-color: var(--white);
+  text-align: center;
+  font-family: "Josefin Sans";
+}
+@media (max-width: 1199px) {
+  .card3 {
+    width: auto;
+    height: auto;
+    margin: 5% auto;
+  }
+}
+@media (max-width: 550px) {
+  .card3 {
+    width: auto;
+    height: auto;
+  }
+}
+.card3 h4 {
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media (max-width: 1199px) {
+  .card3 h4 {
+    font-size: 27px;
+    width: auto;
+  }
+}
+@media (max-width: 550px) {
+  .card3 h4 {
+    font-size: 17px;
+  }
+}
+.card3 p {
+  width: 390px;
+  padding-left: 100px;
+}
+@media (max-width: 1199px) {
+  .card3 p {
+    font-size: 17px;
+    width: auto;
+    margin: 0 auto;
+    padding: 2%;
+  }
+}
+@media (max-width: 550px) {
+  .card3 p {
+    font-size: 17px;
+  }
+}
+.card3 a {
+  background-color: var(--main-color);
+  color: var(--white);
+  box-shadow: 2px 2px 5px var(--black);
+}
+.card3 a:hover {
+  background-color: var(--primary-color);
+  color: var(--black);
+  box-shadow: 2px 2px 5px var(--second-color);
+}
+
+.img4 {
+  background-position: center;
+  width: 100%;
+  height: 190px;
+}
+.img4:hover {
+  filter: grayscale(0.9);
+  cursor: pointer;
+  zoom: 1.2;
+  transition: 1s;
+}
+
+/*----------CONTACT--------------*/
+.container3 {
+  height: 850px;
+  background-image: url(./image/container3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  opacity: 0.7;
+}
+@media (max-width: 1199px) {
+  .container3 {
+    height: 1375px;
+    width: auto;
+  }
+}
+@media (max-width: 550px) {
+  .container3 {
+    height: 1000px;
+  }
+}
+
+.contact {
+  position: absolute;
+  font-family: "Josefin Sans";
+  top: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 250px 250px;
+}
+@media (max-width: 1199px) {
+  .contact {
+    grid-template-rows: 350px;
+    width: auto;
+  }
+}
+.contact h1 {
+  color: var(--white);
+  font-weight: bold;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  font-size: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+@media (max-width: 1199px) {
+  .contact h1 {
+    font-size: 37px;
+  }
+}
+@media (max-width: 550px) {
+  .contact h1 {
+    font-size: 37px;
+  }
+}
+
+.note2 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding: 150px 0px 0px 0px;
+  text-align: center;
+  color: var(--main-color);
+}
+@media (max-width: 1199px) {
+  .note2 {
+    font-size: 27px;
+    padding: 15%;
+    width: auto;
+    margin: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .note2 {
+    font-size: 17px;
+    margin-top: 50%;
+  }
+}
+
+.item5 {
+  background-image: url(./image/item5.png);
+  background-position: center;
+  background-size: cover;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  width: 150px;
+  height: 150px;
+  margin-left: 270px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+@media (max-width: 1199px) {
+  .item5 {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+  }
+}
+@media (max-width: 550px) {
+  .item5 {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.forms {
+  padding: 0px 35px 0px 35px;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--black);
+  text-shadow: 1px 1px 1px white;
+}
+@media (max-width: 1199px) {
+  .forms {
+    font-size: 27px;
+  }
+}
+@media (max-width: 550px) {
+  .forms {
+    font-size: 17px;
+    width: auto;
+  }
+}
+.forms button {
+  background-color: var(--black);
+  color: var(--white);
+}
+.forms button:hover {
+  background-color: var(--primary-color);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.note3 {
+  width: 850px;
+  margin-left: 250px;
+  padding-top: 70px;
+  font-size: 20px;
+  text-align: center;
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+@media (max-width: 1199px) {
+  .note3 {
+    font-size: 27px;
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    height: auto;
+  }
+}
+@media (max-width: 550px) {
+  .note3 {
+    font-size: 17px;
+    width: auto;
+    margin: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
